@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root { color-scheme: light dark; }
+
+
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at -10% -20%, rgba(255,255,255,.9), rgba(255,255,255,0) 60%),
+    radial-gradient(1200px 600px at 120% 120%, rgba(180,220,255,.25), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, #eef2f7 0%, #edf0f4 100%);
+}
+
+h1,h2,h3,h4,h5,h6 { @apply font-semibold; }
+
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
